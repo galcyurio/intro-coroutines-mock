@@ -26,7 +26,7 @@ fun Application.module(testing: Boolean = false) {
     }
     routing {
         get("/") {
-            call.respondText { "Hello World!" }
+            call.respondText { "mock-server for intro-cotourines" }
         }
         get("orgs/kotlin/repos") {
             val inputStream = getMockResponseInputStream("orgs^kotlin^repos.json")
